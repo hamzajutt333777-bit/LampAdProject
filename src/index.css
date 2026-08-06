@@ -1,0 +1,50 @@
+
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.app-container {
+  overflow-y: auto;
+  scroll-behavior: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.app-container::-webkit-scrollbar {
+  display: none;
+}
+
+.p6workpagelist::-webkit-scrollbar,
+.singleList::-webkit-scrollbar {
+  display: none;
+}
+.p6workpagelist,
+.singleList {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: auto !important;
+} */
