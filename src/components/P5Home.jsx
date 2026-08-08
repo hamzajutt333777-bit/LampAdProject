@@ -1,7 +1,7 @@
 
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useRef } from 'react';
+import { useEffect ,useRef } from 'react';
 
 const P5Home = () => {
     const mainRef = useRef(null);
@@ -20,6 +20,33 @@ const P5Home = () => {
     const thanksRef = useRef(null);
     const lastArrowRef = useRef(null)
     const logoArr=['a', 'e', 't', 'h', 'e', 'r', 'a']
+
+    useEffect(() => {
+    // 1. Disable scrolling on the body
+    document.body.style.overflow = 'hidden';
+
+    // 2. Prevent arrow keys from doing anything
+    const preventArrowKeys = (e) => {
+      if (e.key.startsWith('Arrow')) {
+        e.preventDefault();
+      }
+    };
+
+    // 3. Prevent touch scrolling
+    const preventTouchMove = (e) => {
+      e.preventDefault();
+    };
+
+    window.addEventListener('keydown', preventArrowKeys);
+    window.addEventListener('touchmove', preventTouchMove, { passive: false });
+
+    return () => {
+      // Restore everything when leaving the component
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', preventArrowKeys);
+      window.removeEventListener('touchmove', preventTouchMove);
+    };
+  }, []);
 
     useGSAP(() => {
     const tl1 = gsap.timeline();
@@ -363,7 +390,7 @@ const P5Home = () => {
 });
 
     return (
-        <div ref={mainRef} className='min-h-screen w-screen bg-black text-white'>
+        <div ref={mainRef} className='min-h-screen w-screen bg-black text-white overflow-hidden'>
             <div ref={page1Ref} className='relative min-h-screen w-screen bg-black pt-[5vw]'>
                 <div ref={logoRef} className='absolute z-[999] top-[21.2vw] left-[49vw] h-[15vw] w-[40vw] flex items-center justify-center'>
                     {logoArr.map((item, index) => (
