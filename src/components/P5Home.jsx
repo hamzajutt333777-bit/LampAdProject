@@ -404,13 +404,13 @@ const P5Home = () => {
                 <p ref={paraRef} className='flex flex-start font-mono text-left text-[1.6vw] leading-[1.8vw] ml-[1vw] translate-y-[5vw] translate-x-[2vw] mt-[10vw]'>A modern lighting experience<br/>inspired by nature and<br/>designed for everyday living</p>
                 </div>
                 <div ref={heroImgRef} className='absolute scale-0 origin-bottom top-0 left-0 h-screen w-full bg-red-300 z-[996]'>
-                <img className='h-full w-full object-cover' src="../../../public/bg2.webp" alt="" />
+                <img className='h-full w-full object-cover' src="/bg2.webp" alt="" />
                 </div>
                 <div ref={lamp1Ref} className='absolute pb-[20vw] z-[999] pr-[10vw] h-[115vw] w-[100vw] flex items-center'>
-                    <img className='h-[220vw] w-[170vw] object-top mr-[5vw]' src="../../../public/l1r.png" alt="" />
+                    <img className='h-[220vw] w-[170vw] object-top mr-[5vw]' src="/l1r.png" alt="" />
                 </div>
                 <div ref={lamp2Ref} className='lampbg absolute h-[50vw] w-[33.3vw] bg-neutral- top-[-2vw] left-0 translate-y-[50vw] flex flex-col items-center justify-center pt-[1vw] '>
-                    <img className='firstsidelamp h-[50vw] w-[20vw] object-center' src="../../../public/l2r.png" alt="" />
+                    <img className='firstsidelamp h-[50vw] w-[20vw] object-center' src="/l2r.png" alt="" />
                     <div className='lampInfo h-[10vw] w-[20vw] text-center flex flex-col gap-[0.5vw] opacity-0'>
                         <h1 className='uppercase text-[1.8vw] font-semibold'>calm</h1>
                         <p className='text-[1.2vw] leading-[1.4vw]'>Feel the pleaseure, joy and <br/>more relaxing</p>
@@ -423,7 +423,7 @@ const P5Home = () => {
                 </div>
                 </div>
                 <div ref={lamp3Ref} className='lampbg absolute h-[50vw] w-[33.3vw] bg-neutral- top-[-2vw] right-0 translate-y-[50vw] flex flex-col items-center justify-center pt-[1vw]'>
-                    <img className='firstsidelamp h-[50vw] w-[20vw] object-center' src="../../../public/l3r.png" alt="" />
+                    <img className='firstsidelamp h-[50vw] w-[20vw] object-center' src="/l3r.png" alt="" />
                     <div className='lampInfo h-[10vw] w-[20vw] text-center flex flex-col gap-[0.5vw] translate-y-[3vw] opacity-0'>
                         <h1 className='uppercase text-[1.8vw] font-semibold'>energy</h1>
                         <p className='text-[1.2vw] leading-[1.4vw]'>Enhance the spirit for fun<br/>and entertainment</p>
@@ -433,9 +433,9 @@ const P5Home = () => {
             <div ref={page2Ref} className='relative h-screen w-screen flex'>
                 
                 <div className='relative h-full w-[40vw] '>
-                    <img className='sidelamp1 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[-35vw] h-[62vw] w-[35vw]' src="../../../public/l1r.png" alt="" />
-                    <img className='sidelamp2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[62vw] w-[35vw]' src="../../../public/l2r.png" alt="" />
-                    <img className='sidelamp3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[62vw] w-[35vw]' src="../../../public/l3r.png" alt="" />
+                    <img className='sidelamp1 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[-35vw] h-[62vw] w-[35vw]' src="/l1r.png" alt="" />
+                    <img className='sidelamp2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[62vw] w-[35vw]' src="/l2r.png" alt="" />
+                    <img className='sidelamp3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[62vw] w-[35vw]' src="/l3r.png" alt="" />
                 </div>
                 <div className='slidinglamps relative h-full w-[60vw]'>
                     <p className='lamp1info w-[55vw] mr-[2vw] inline-block font-mono absolute top-1/3 left-1/2 translate-x-[-30vw] text-white -translate-y-1/2 opacity-0'>Elegant cylindrical lamp featuring dark walnut caps and a warm amber linen shade. A refined vertical brass bar accents the front, while a braided brown cord adds rustic elegance for a cozy ambiance.</p>
